@@ -200,30 +200,66 @@ a {
     font-weight: bold; }
   .slide table.striped tr:nth-child(even) {
     background: #f1f7fc; }
-.slide.cover {
+.slide.title {
   color: #FFF;
   background: #333; }
-  .slide.cover h2 {
+  .slide.title h2 {
+    position: absolute;
+    top: 40%;
+    left: 96px;
+    right: 96px;
+    font-size: 72px;
+    text-align: center; }
+  .slide.title h3 {
+    position: absolute;
+    top: 55%;
+    left: 96px;
+    right: 96px;
+    font-size: 28px;
+    text-align: center; }
+  .slide.title a {
+    color: #FFf; }
+  .slide.title img, .slide.title svg, .slide.title video, .slide.title object, .slide.title canvas, .slide.title iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+  .slide.title.w img, .slide.title.w svg, .slide.title.w video, .slide.title.w object, .slide.title.w canvas, .slide.title.w iframe {
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%); }
+  .slide.title.h img, .slide.title.h svg, .slide.title.h video, .slide.title.h object, .slide.title.h canvas, .slide.title.h iframe {
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%); }
+  .slide.title.w.h img, .slide.title.w.h svg, .slide.title.w.h video, .slide.title.w.h object, .slide.title.w.h canvas, .slide.title.w.h iframe {
+    top: 0;
+    left: 0;
+    transform: none; }
+.slide.shout {
+  color: #FFF;
+  background: #7a4171; }
+  .slide.shout h2 {
     position: absolute;
     top: 45%;
     left: 96px;
     right: 96px;
     font-size: 72px;
     text-align: center; }
-  .slide.cover img, .slide.cover svg, .slide.cover video, .slide.cover object, .slide.cover canvas, .slide.cover iframe {
+  .slide.shout img, .slide.shout svg, .slide.shout video, .slide.shout object, .slide.shout canvas, .slide.shout iframe {
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1; }
-  .slide.cover.w img, .slide.cover.w svg, .slide.cover.w video, .slide.cover.w object, .slide.cover.w canvas, .slide.cover.w iframe {
+  .slide.shout.w img, .slide.shout.w svg, .slide.shout.w video, .slide.shout.w object, .slide.shout.w canvas, .slide.shout.w iframe {
     top: 50%;
     width: 100%;
     transform: translateY(-50%); }
-  .slide.cover.h img, .slide.cover.h svg, .slide.cover.h video, .slide.cover.h object, .slide.cover.h canvas, .slide.cover.h iframe {
+  .slide.shout.h img, .slide.shout.h svg, .slide.shout.h video, .slide.shout.h object, .slide.shout.h canvas, .slide.shout.h iframe {
     left: 50%;
     height: 100%;
     transform: translateX(-50%); }
-  .slide.cover.w.h img, .slide.cover.w.h svg, .slide.cover.w.h video, .slide.cover.w.h object, .slide.cover.w.h canvas, .slide.cover.w.h iframe {
+  .slide.shout.w.h img, .slide.shout.w.h svg, .slide.shout.w.h video, .slide.shout.w.h object, .slide.shout.w.h canvas, .slide.shout.w.h iframe {
     top: 0;
     left: 0;
     transform: none; }

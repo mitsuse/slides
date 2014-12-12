@@ -236,10 +236,67 @@ a {
 				}
 			}
 		}
-	// Cover
-	&.cover {
+	// Title
+	&.title {
         color: #FFF;
         background: #333;
+		h2 {
+			position:absolute;
+			top:40%;
+			left:96px;
+			right:96px;
+			font-size:72px;
+            text-align: center;
+			}
+		h3 {
+			position:absolute;
+			top:55%;
+			left:96px;
+			right:96px;
+			font-size:28px;
+            text-align: center;
+			}
+        a {
+            color: #FFf;
+            }
+		@mixin title {
+			img, svg, video,
+			object, canvas, iframe {
+				@content;
+				}
+			}
+		@include title {
+			position:absolute;
+			top:0;
+			left:0;
+			z-index:-1;
+			}
+		&.w {
+			@include title {
+				top:50%;
+				width:100%;
+				transform:translateY(-50%);
+				}
+			}
+		&.h {
+			@include title {
+				left:50%;
+				height:100%;
+				transform:translateX(-50%);
+				}
+			}
+		&.w.h {
+			@include title {
+				top:0;
+				left:0;
+				transform:none;
+				}
+			}
+		}
+	// Shout
+	&.shout {
+        color: #FFF;
+        background: #7a4171;
 		h2 {
 			position:absolute;
 			top:45%;
@@ -248,34 +305,34 @@ a {
 			font-size:72px;
             text-align: center;
 			}
-		@mixin cover {
+		@mixin shout {
 			img, svg, video,
 			object, canvas, iframe {
 				@content;
 				}
 			}
-		@include cover {
+		@include shout {
 			position:absolute;
 			top:0;
 			left:0;
 			z-index:-1;
 			}
 		&.w {
-			@include cover {
+			@include shout {
 				top:50%;
 				width:100%;
 				transform:translateY(-50%);
 				}
 			}
 		&.h {
-			@include cover {
+			@include shout {
 				left:50%;
 				height:100%;
 				transform:translateX(-50%);
 				}
 			}
 		&.w.h {
-			@include cover {
+			@include shout {
 				top:0;
 				left:0;
 				transform:none;
