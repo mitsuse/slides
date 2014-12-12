@@ -293,6 +293,52 @@ a {
 				}
 			}
 		}
+	// Shout
+	&.shout {
+        color: #FFF;
+        background: #7a4171;
+		h2 {
+			position:absolute;
+			top:45%;
+			left:96px;
+			right:96px;
+			font-size:72px;
+            text-align: center;
+			}
+		@mixin shout {
+			img, svg, video,
+			object, canvas, iframe {
+				@content;
+				}
+			}
+		@include shout {
+			position:absolute;
+			top:0;
+			left:0;
+			z-index:-1;
+			}
+		&.w {
+			@include shout {
+				top:50%;
+				width:100%;
+				transform:translateY(-50%);
+				}
+			}
+		&.h {
+			@include shout {
+				left:50%;
+				height:100%;
+				transform:translateX(-50%);
+				}
+			}
+		&.w.h {
+			@include shout {
+				top:0;
+				left:0;
+				transform:none;
+				}
+			}
+		}
 	// Place
 	.place {
 		position:absolute;

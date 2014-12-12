@@ -236,6 +236,33 @@ a {
     top: 0;
     left: 0;
     transform: none; }
+.slide.shout {
+  color: #FFF;
+  background: #7a4171; }
+  .slide.shout h2 {
+    position: absolute;
+    top: 45%;
+    left: 96px;
+    right: 96px;
+    font-size: 72px;
+    text-align: center; }
+  .slide.shout img, .slide.shout svg, .slide.shout video, .slide.shout object, .slide.shout canvas, .slide.shout iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+  .slide.shout.w img, .slide.shout.w svg, .slide.shout.w video, .slide.shout.w object, .slide.shout.w canvas, .slide.shout.w iframe {
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%); }
+  .slide.shout.h img, .slide.shout.h svg, .slide.shout.h video, .slide.shout.h object, .slide.shout.h canvas, .slide.shout.h iframe {
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%); }
+  .slide.shout.w.h img, .slide.shout.w.h svg, .slide.shout.w.h video, .slide.shout.w.h object, .slide.shout.w.h canvas, .slide.shout.w.h iframe {
+    top: 0;
+    left: 0;
+    transform: none; }
 .slide .place {
   position: absolute;
   top: 50%;
