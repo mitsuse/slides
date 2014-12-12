@@ -257,6 +257,14 @@ a {
 		}
 	// Cover
 	&.cover {
+		h2 {
+			position:absolute;
+			top:45%;
+			left:96px;
+			right:96px;
+			font-size:72px;
+            text-align: center;
+			}
 		@mixin cover {
 			img, svg, video,
 			object, canvas, iframe {

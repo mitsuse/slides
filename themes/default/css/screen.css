@@ -211,6 +211,13 @@ a {
   z-index: 1; }
   .slide.cover:after, .slide.shout:after {
     content: ''; }
+.slide.cover h2 {
+  position: absolute;
+  top: 45%;
+  left: 96px;
+  right: 96px;
+  font-size: 72px;
+  text-align: center; }
 .slide.cover img, .slide.cover svg, .slide.cover video, .slide.cover object, .slide.cover canvas, .slide.cover iframe {
   position: absolute;
   top: 0;
