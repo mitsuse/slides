@@ -13,7 +13,7 @@ body {
 		}
 	}
 a {
-	color:$color;
+    color: #7a4171;
 	@include underline(currentColor, 0.09);
 	text-decoration:none;
 	}
@@ -257,7 +257,7 @@ a {
             text-align: center;
 			}
         a {
-            color: #FFf;
+            color: #FFF;
             }
 		@mixin title {
 			img, svg, video,
@@ -400,7 +400,7 @@ a {
 		position:absolute;
 		clip:rect(0, auto, auto, 0); // Having fun with IE10
 		padding:50px 0 50px 50px;
-		background:desaturate(lighten($color, 30%), 60%);
+		background:desaturate(lighten(#52A2DF, 30%), 60%);
 		text-align:center;
 		// Outfit
 		.caption,
