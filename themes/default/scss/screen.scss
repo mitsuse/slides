@@ -58,7 +58,7 @@ a {
 	width:$width;
 	height:$height;
 	background:#FFF;
-	color:#000;
+	color:#333;
 	-webkit-print-color-adjust:exact;
 	-webkit-text-size-adjust:none;
 	-moz-text-size-adjust:none;
@@ -236,16 +236,10 @@ a {
 				}
 			}
 		}
-	// Cover Shout
-	&.cover,
-	&.shout {
-		z-index:1;
-		&:after {
-			content:'';
-			}
-		}
 	// Cover
 	&.cover {
+        color: #FFF;
+        background: #333;
 		h2 {
 			position:absolute;
 			top:45%;
@@ -285,23 +279,6 @@ a {
 				top:0;
 				left:0;
 				transform:none;
-				}
-			}
-		}
-	// Shout
-	&.shout {
-		background:$color;
-		h2 {
-			position:absolute;
-			top:50%;
-			left:128px;
-			right:96px;
-			color:#FFF;
-			font-size:100px;
-			transform:translateY(-50%);
-			a {
-				@include underline(currentColor, 0.055);
-				color:#FFF;
 				}
 			}
 		}
@@ -447,13 +424,6 @@ a {
 					content:'';
 					}
 				}
-			// Cover Shout
-			&.cover,
-			&.shout {
-				&:after {
-					content:counter(slide);
-					}
-				}
 			// Notes
 			footer {
 				display:block;
@@ -502,25 +472,6 @@ a {
 			// Current
 			&:target {
 				margin:0;
-				}
-			// Shout
-			&.shout {
-				&.right, &.up {
-					h2 {
-						opacity:0;
-						transition:all 0.4s ease-out;
-						}
-					&:target h2 {
-						opacity:1;
-						transform:translateX(0) translateY(-50%);
-						}
-					}
-				&.right h2 {
-					transform:translateX(-100%) translateY(-50%);
-					}
-				&.up h2 {
-					transform:translateX(0) translateY(100%);
-					}
 				}
 			}
 		// Progress
