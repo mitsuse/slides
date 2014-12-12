@@ -102,7 +102,7 @@ a {
   font: 42px/1 Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   font-weight: bold; }
 .slide p {
-  margin: 0 0 48px; }
+  margin: 0 0 24px; }
 .slide p.note {
   color: #AAA; }
 .slide b, .slide strong {
