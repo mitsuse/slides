@@ -58,7 +58,7 @@ a {
 	width:$width;
 	height:$height;
 	background:#FFF;
-	color:#000;
+	color:#333;
 	-webkit-print-color-adjust:exact;
 	-webkit-text-size-adjust:none;
 	-moz-text-size-adjust:none;
@@ -246,6 +246,8 @@ a {
 		}
 	// Cover
 	&.cover {
+        color: #FFF;
+        background: #333;
 		h2 {
 			position:absolute;
 			top:45%;
