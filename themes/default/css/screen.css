@@ -34,7 +34,7 @@ body {
       text-rendering: geometricPrecision; } }
 
 a {
-  color: #52A2DF;
+  color: #7a4171;
   background: linear-gradient(to top, currentColor, currentColor 0.09em, transparent 0.09em, transparent) repeat-x;
   text-decoration: none; }
 
@@ -218,7 +218,7 @@ a {
     font-size: 28px;
     text-align: center; }
   .slide.title a {
-    color: #FFf; }
+    color: #7a4171; }
   .slide.title img, .slide.title svg, .slide.title video, .slide.title object, .slide.title canvas, .slide.title iframe {
     position: absolute;
     top: 0;
