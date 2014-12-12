@@ -38,14 +38,6 @@ a {
   background: linear-gradient(to top, currentColor, currentColor 0.09em, transparent 0.09em, transparent) repeat-x;
   text-decoration: none; }
 
-.caption {
-  display: none;
-  margin: 0 0 60px;
-  padding: 0 50px 0 0;
-  color: #555; }
-  .caption h1 {
-    font: 50px Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; }
-
 .badge {
   position: absolute;
   top: 0;
@@ -212,30 +204,33 @@ a {
   z-index: 1; }
   .slide.cover:after, .slide.shout:after {
     content: ''; }
-.slide.cover h2 {
-  position: absolute;
-  top: 45%;
-  left: 96px;
-  right: 96px;
-  font-size: 72px;
-  text-align: center; }
-.slide.cover img, .slide.cover svg, .slide.cover video, .slide.cover object, .slide.cover canvas, .slide.cover iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1; }
-.slide.cover.w img, .slide.cover.w svg, .slide.cover.w video, .slide.cover.w object, .slide.cover.w canvas, .slide.cover.w iframe {
-  top: 50%;
-  width: 100%;
-  transform: translateY(-50%); }
-.slide.cover.h img, .slide.cover.h svg, .slide.cover.h video, .slide.cover.h object, .slide.cover.h canvas, .slide.cover.h iframe {
-  left: 50%;
-  height: 100%;
-  transform: translateX(-50%); }
-.slide.cover.w.h img, .slide.cover.w.h svg, .slide.cover.w.h video, .slide.cover.w.h object, .slide.cover.w.h canvas, .slide.cover.w.h iframe {
-  top: 0;
-  left: 0;
-  transform: none; }
+.slide.cover {
+  color: #FFF;
+  background: #333; }
+  .slide.cover h2 {
+    position: absolute;
+    top: 45%;
+    left: 96px;
+    right: 96px;
+    font-size: 72px;
+    text-align: center; }
+  .slide.cover img, .slide.cover svg, .slide.cover video, .slide.cover object, .slide.cover canvas, .slide.cover iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+  .slide.cover.w img, .slide.cover.w svg, .slide.cover.w video, .slide.cover.w object, .slide.cover.w canvas, .slide.cover.w iframe {
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%); }
+  .slide.cover.h img, .slide.cover.h svg, .slide.cover.h video, .slide.cover.h object, .slide.cover.h canvas, .slide.cover.h iframe {
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%); }
+  .slide.cover.w.h img, .slide.cover.w.h svg, .slide.cover.w.h video, .slide.cover.w.h object, .slide.cover.w.h canvas, .slide.cover.w.h iframe {
+    top: 0;
+    left: 0;
+    transform: none; }
 .slide.shout {
   background: #52A2DF; }
   .slide.shout h2 {
