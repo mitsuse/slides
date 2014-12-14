@@ -78,17 +78,6 @@ a {
   @media print {
     .slide {
       page-break-before: always; } }
-  .slide:after {
-    position: absolute;
-    right: 40px;
-    bottom: 45px;
-    left: 0;
-    color: #7a4171;
-    font-size: 36px;
-    counter-increment: slide;
-    content: counter(slide);
-    text-align: right;
-    line-height: 1; }
   .slide > div {
     position: absolute;
     top: 0;
@@ -97,6 +86,18 @@ a {
     padding: 40px 40px 0 40px;
     width: 944px;
     height: 600px; }
+
+.number:after {
+  position: absolute;
+  right: 40px;
+  bottom: 45px;
+  left: 0;
+  color: #7a4171;
+  font-size: 36px;
+  counter-increment: slide;
+  content: counter(slide);
+  text-align: right;
+  line-height: 1; }
 
 .slide h2 {
   margin: 0 0 40px;

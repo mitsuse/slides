@@ -66,6 +66,19 @@ a {
 	@media print {
 		page-break-before:always;
 		}
+	// Inner
+	> div {
+		position:absolute;
+		top:0;
+		left:0;
+		overflow:hidden;
+		padding:$top $right 0 $left;
+		width:$width - $left - $right;
+		height:$height - $top;
+		}
+	}
+
+.number {
 	// Number
 	&:after {
 		position:absolute;
@@ -79,17 +92,7 @@ a {
 		text-align:right;
 		line-height:1;
 		}
-	// Inner
-	> div {
-		position:absolute;
-		top:0;
-		left:0;
-		overflow:hidden;
-		padding:$top $right 0 $left;
-		width:$width - $left - $right;
-		height:$height - $top;
-		}
-	}
+    }
 
 // Elements
 // -------------------------------
