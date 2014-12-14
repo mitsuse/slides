@@ -69,13 +69,14 @@ a {
 	// Number
 	&:after {
 		position:absolute;
-		right:0;
+		right:40px;
 		bottom:45px;
 		left:0;
-		color:#AAA;
+		color:#7a4171;
+        font-size: 36px;
 		counter-increment:slide;
 		content:counter(slide);
-		text-align:center;
+		text-align:right;
 		line-height:1;
 		}
 	// Inner
@@ -95,7 +96,7 @@ a {
 .slide {
 	// Header
 	h2 {
-		margin:0 0 58px;
+		margin:0 0 40px;
         font:42px/1 Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
         font-weight: bold;
 		}
@@ -154,7 +155,7 @@ a {
 		}
 	// Lists
 	ol, ul {
-		margin:0 0 48px;
+		margin:0 40px 48px;
 		counter-reset:list;
 		li {
 			text-indent:-2em;
