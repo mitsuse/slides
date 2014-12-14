@@ -93,16 +93,16 @@ a {
     top: 0;
     left: 0;
     overflow: hidden;
-    padding: 100px 96px 0 128px;
+    padding: 60px 96px 0 128px;
     width: 800px;
-    height: 540px; }
+    height: 580px; }
 
 .slide h2 {
   margin: 0 0 58px;
   font: 42px/1 Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   font-weight: bold; }
 .slide p {
-  margin: 0 0 24px; }
+  margin: 0 0 18px; }
 .slide p.note {
   color: #AAA; }
 .slide b, .slide strong {
