@@ -66,18 +66,6 @@ a {
 	@media print {
 		page-break-before:always;
 		}
-	// Number
-	&:after {
-		position:absolute;
-		right:0;
-		bottom:45px;
-		left:0;
-		color:#AAA;
-		counter-increment:slide;
-		content:counter(slide);
-		text-align:center;
-		line-height:1;
-		}
 	// Inner
 	> div {
 		position:absolute;
@@ -90,18 +78,34 @@ a {
 		}
 	}
 
+.number {
+	// Number
+	&:after {
+		position:absolute;
+		right:40px;
+		bottom:45px;
+		left:0;
+		color:#7a4171;
+        font-size: 36px;
+		counter-increment:slide;
+		content:counter(slide);
+		text-align:right;
+		line-height:1;
+		}
+    }
+
 // Elements
 // -------------------------------
 .slide {
 	// Header
 	h2 {
-		margin:0 0 58px;
+		margin:0 0 40px;
         font:42px/1 Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
         font-weight: bold;
 		}
 	// Text
 	p {
-		margin:0 0 24px;
+		margin:0 0 18px;
 		}
 	p.note {
 		color:#AAA;
@@ -138,6 +142,7 @@ a {
 	// Quote
 	blockquote {
 		font-style:italic;
+        margin-left: 80px;
 		&:before {
 			position:absolute;
 			margin:-49px 0 0 -100px;
@@ -154,7 +159,7 @@ a {
 		}
 	// Lists
 	ol, ul {
-		margin:0 0 48px;
+		margin:0 40px 48px;
 		counter-reset:list;
 		li {
 			text-indent:-2em;

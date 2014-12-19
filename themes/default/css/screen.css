@@ -78,31 +78,33 @@ a {
   @media print {
     .slide {
       page-break-before: always; } }
-  .slide:after {
-    position: absolute;
-    right: 0;
-    bottom: 45px;
-    left: 0;
-    color: #AAA;
-    counter-increment: slide;
-    content: counter(slide);
-    text-align: center;
-    line-height: 1; }
   .slide > div {
     position: absolute;
     top: 0;
     left: 0;
     overflow: hidden;
-    padding: 100px 96px 0 128px;
-    width: 800px;
-    height: 540px; }
+    padding: 40px 40px 0 40px;
+    width: 944px;
+    height: 600px; }
+
+.number:after {
+  position: absolute;
+  right: 40px;
+  bottom: 45px;
+  left: 0;
+  color: #7a4171;
+  font-size: 36px;
+  counter-increment: slide;
+  content: counter(slide);
+  text-align: right;
+  line-height: 1; }
 
 .slide h2 {
-  margin: 0 0 58px;
+  margin: 0 0 40px;
   font: 42px/1 Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   font-weight: bold; }
 .slide p {
-  margin: 0 0 24px; }
+  margin: 0 0 18px; }
 .slide p.note {
   color: #AAA; }
 .slide b, .slide strong {
@@ -128,7 +130,8 @@ a {
 .slide sup {
   top: -0.5em; }
 .slide blockquote {
-  font-style: italic; }
+  font-style: italic;
+  margin-left: 80px; }
   .slide blockquote:before {
     position: absolute;
     margin: -49px 0 0 -100px;
@@ -141,7 +144,7 @@ a {
     font-style: italic;
     font-weight: bold; }
 .slide ol, .slide ul {
-  margin: 0 0 48px;
+  margin: 0 40px 48px;
   counter-reset: list; }
   .slide ol li, .slide ul li {
     text-indent: -2em; }
@@ -291,7 +294,7 @@ a {
   bottom: -640px;
   z-index: 1;
   display: none;
-  padding: 21px 96px 4px 128px;
+  padding: 21px 40px 4px 40px;
   background: #FAFAC4;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
   transition: bottom 0.3s; }
